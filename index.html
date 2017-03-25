@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Another Weather App</title>
+  
+  <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="vendor/weather-icons-master/css/weather-icons.min.css">
+</head>
+<body>
+
+  <section id="main">
+   
+    <div class="container bar-size">
+      <!-- change function -->
+      <button id="change" class="btn"></button>
+    </div>
+   
+    <div class="container text-center main">
+      <div class="col-md-4 col-md-offset-4">
+        <!-- city name -->
+        <h1 id="city"></h1>
+        <!-- current weather -->  
+        <p id="status"></p>
+        <!-- icon -->
+        <div id="icon"></div>
+        <!-- temperature -->
+        <div id="temp"></div>
+      </div>
+    </div> <!-- end container -->
+    
+    <div class="container text-center child">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 forecast">
+          <!-- weekDays content -->
+          <div class="icons"></div>
+          <div id="forecast"></div>
+          <div id="week-days"></div>
+        </div>
+      </div>
+    </div> <!-- end container -->
+    
+    <div class="container bar-size">
+      <form action="changeCity()" class="search-form">
+        <div class="form-group has-feedback">
+          <label for="search" class="sr-only">Search</label>
+          <input type="text" id="search" class="form-control" name="search" placeholder="Search for another city ...">
+          <span class="glyphicon glyphicon-search form-control-feedback"></span>
+        </div>
+      </form>
+    </div> <!-- end container  -->
+  </section>
+
+  <footer>
+    <div class="container-fluid text-center">
+      <a href="https://openweathermap.org/" title="Powered by Open Weather Map" target="_blank">
+        <img class="api-logo" src="vendor/img/api-logo-1.png" alt="Open Weather logo" />
+      </a>
+      <span>
+        Developed by <a href="https://www.freecodecamp.com/luiquecruz" target="_blank"> Luique Cruz</a>
+      </span>
+    </div>
+  </footer>
+
+  
+    
+    <script src="vendor/jQuery-3.2/jquery-3.2.0.min.js"></script>
+    <script src="vendor/jQuery-UI-1.12.1/jquery-ui.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

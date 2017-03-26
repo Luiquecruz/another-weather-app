@@ -32,7 +32,7 @@ function getLocation() {
   });
 }
 
-// Add a darker mask to the body and helps draw the elements in main box.
+// Add a darker mask to the body and helps to draw the elements in main box.
 function draw(value) {
   $('body').css('background-image','rgba(90, 90, 90, .5)');
 }
@@ -93,9 +93,8 @@ function getIcon(weather) { // muda o icone do clima no DOM
     case 'Clear': return '<i class="wi wi-day-sunny"></i>';
     case 'Thunderstorm': return '<i class="wi wi-storm-showers"></i>';
     case 'Snow': return '<i class="wi wi-snow"></i>';
-    case 'Haze': return '<i class="wi wi-smoke"></i>';
     case 'Fog': return '<i class="wi wi-fog"></i>';
-    case 'Mist': return '<i class="wi wi-fog"></i>';
+    case 'Mist': return '<i class="wi wi-smoke"></i>';
       
     default: return '<i class="wi wi-time-1"></i>';
   }

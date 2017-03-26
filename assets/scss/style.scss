@@ -147,7 +147,7 @@ body {
   @include custom-width;
 }
 
-/* quick fix to make thnigs disapear... */
+/* quick fix to make things disapear... */
 .ui-helper-hidden-accessible { display :none; }
 
 .search-form {
@@ -237,7 +237,7 @@ body {
       font-weight: 600;
     }
     
-    ::-o-input-placeholder { /* IE 10+ */
+    ::-o-input-placeholder { /* Opera */
       color: $font-color;
       font-weight: 600;
     }
